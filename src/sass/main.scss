@@ -1,0 +1,12 @@
+//global
+@import 'colors';
+@import 'resets';
+@import 'fonts';
+@import 'text';
+
+//components
+@import './components/app';
+@import './components/dashboard';
+@import './components/header';
+@import './components/home';
+@import './components/login';

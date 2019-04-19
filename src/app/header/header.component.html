@@ -1,0 +1,31 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <!-- setup route to home -->
+    <a routerLink="/" class="navbar-brand"><img class="logo-img" src="../../assets/svgs/film.svg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item mr-sm-4">
+          <a routerLink="/person_search" class="nav-link">Person Search</a>
+        </li>
+        <li class="nav-item mr-sm-4">
+          <a routerLink="/movie_search" class="nav-link">Movie Search</a>
+        </li> -->
+        <!-- ngif loggedIn -->
+        <li class="nav-item mr-sm-4">
+          <a routerLink="/dashboard" class="nav-link">Dashboard</a>
+        </li>
+      </ul>
+      <!-- ngif !loggedIn -->
+      <button routerLink="/login" class="btn btn-outline-info">
+        Login
+      </button>
+      <!-- ngif loggedIn -->
+      <button class="btn btn-outline-info">
+        Logout
+      </button>
+    </div>
+  </nav>
+</header>

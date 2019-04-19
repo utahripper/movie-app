@@ -1,8 +1,6 @@
 app-home {
     .home-container {
-        background: rgb(255, 255, 255);
-        height: calc(100vh - 4.625rem);
-        width: 100vw;
+        background: #000;
         overflow: hidden;
         position: relative;
         .home-bg {
@@ -14,14 +12,15 @@ app-home {
             align-items: center;
             width: 100%;
             height: 100%;
-            background-image: url('./assets/images/movie-theater.jpg');
+            background-image: url('./assets/images/popcorn.jpg');
             background-size: cover;
             transform: scale(1.1);
             background-position: center;
-            opacity: .95;
+            opacity: .4;
             filter: grayscale(100%) blur(2px);
         }
         .home-center {
+            width: 100%;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -30,12 +29,16 @@ app-home {
             flex-direction: column;
             align-items: center;
             h1 {
-                color: $blue;
+                color: #fff;
                 text-shadow: 0 0 10px rgba(0,0,0,.9);
                 margin-bottom: 1rem;
+                span {
+                    color: $yellow;
+                }
             }
             button {
                 width: max-content;
+                font-size: 1.3rem;
             }
         }
     }

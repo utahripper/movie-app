@@ -1,0 +1,17 @@
+.full-height {
+    width: 100vw;
+    height: calc(100vh - 4.625rem);
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid $red;
+}
+
+.greyout-btn {
+    background: $greyout!important;
+    border: 1px solid $greyout!important;
+}
+
+.box-shadow {
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.3);
+}

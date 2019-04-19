@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SpinnerService } from './services/spinner.service';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,13 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule, 
     AuthModule
   ],
-  providers: [],
+  providers: [
+    SpinnerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

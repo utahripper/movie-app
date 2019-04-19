@@ -1,0 +1,11 @@
+app-login {
+    form {
+        border-radius: .25rem;
+        background: #000;
+        padding: 2rem;
+        border: 1px solid $blue;
+        label {
+            color: $fontGray;
+        }
+    }
+}
